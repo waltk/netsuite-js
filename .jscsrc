@@ -16,5 +16,8 @@
   "validateJSDoc": {
     "checkParamNames": true,
     "requireParamTypes": true
-  }
+  },
+  "excludeFiles": [
+    "./lib/netsuite/service.js"
+  ]
 }
