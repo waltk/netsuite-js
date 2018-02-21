@@ -6,8 +6,7 @@ var config = new NetSuite.Configuration(credentials);
 var service = new NetSuite.Service(config);
 service
   .init(true)
-  .then(function( /*client*/ ) {
-    console.log(service);
+  .then(function( client ) {
     var customerAddressbookList = new NetSuite.Relationships.CustomerAddressbookList();
     customerAddressbookList.addressbook = [];
     var address = new NetSuite.Common.Address();
@@ -34,8 +33,9 @@ service
     customer.lastName = 'lastName';
     customer.firstName = 'firstName';
     customer.phone = '123456789';
-    customer.addressbookList = customerAddressbookList;
-    // return service.add(customer);
+    customer.email = 'joe.doe@abc.com';
+    // customer.addressbookList = customerAddressbookList;
+    return service.add(customer);
     // return Promise.resolve(customerAddressbookList);
   })
   .then(function(result, raw, soapHeader) {
