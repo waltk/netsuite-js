@@ -30,10 +30,10 @@ service
     customerAddressbook.addressbookAddress = address;
     customerAddressbookList.addressbook.push(customerAddressbook);
     var customer = new NetSuite.Relationships.Customer();
-    customer.lastName = 'lastName';
-    customer.firstName = 'firstName';
-    customer.phone = '123456789';
-    customer.email = 'joe.doe@abc.com';
+    customer.firstName = new NetSuite.StringObject('firstName', 'firstName');
+    customer.lastName =  new NetSuite.StringObject('lastName', 'lastName');
+    customer.phone =  new NetSuite.StringObject('phone', '123456789');
+    customer.email =  new NetSuite.StringObject('email', 'joe.doe@abc.com');
     // customer.addressbookList = customerAddressbookList;
     return service.add(customer);
     // return Promise.resolve(customerAddressbookList);

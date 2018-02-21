@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xmlns:tns="urn:platform_2017_2.webservices.netsuite.com"
+               xmlns:platformMsgs="urn:messages_2017_2.platform.webservices.netsuite.com"
+               xmlns:platformFaults="urn:faults_2017_2.platform.webservices.netsuite.com"
+               xmlns:platformCore="urn:core_2017_2.platform.webservices.netsuite.com"
+               xmlns:platformCommon="urn:common_2017_2.platform.webservices.netsuite.com"
+               xmlns:listRel="urn:relationships_2017_2.lists.webservices.netsuite.com"
+               xmlns:tranSales="urn:sales_2017_2.transactions.webservices.netsuite.com"
+               xmlns:actSched="urn:scheduling_2017_2.activities.webservices.netsuite.com"
+               xmlns:setupCustom="urn:customization_2017_2.setup.webservices.netsuite.com"
+               xmlns:listAcct="urn:accounting_2017_2.lists.webservices.netsuite.com"
+               xmlns:tranBank="urn:bank_2017_2.transactions.webservices.netsuite.com"
+               xmlns:tranCust="urn:customers_2017_2.transactions.webservices.netsuite.com"
+               xmlns:tranInvt="urn:inventory_2017_2.transactions.webservices.netsuite.com"
+               xmlns:listSupport="urn:support_2017_2.lists.webservices.netsuite.com"
+               xmlns:tranGeneral="urn:general_2017_2.transactions.webservices.netsuite.com"
+               xmlns:listMkt="urn:marketing_2017_2.lists.webservices.netsuite.com"
+               xmlns:listWebsite="urn:website_2017_2.lists.webservices.netsuite.com"
+               xmlns:fileCabinet="urn:filecabinet_2017_2.documents.webservices.netsuite.com"
+               xmlns:listEmp="urn:employees_2017_2.lists.webservices.netsuite.com">
+  <soap:Header>
+    <platformMsgs:passport>
+      <platformCore:email>alexandr@buildateam.io</platformCore:email>
+      <platformCore:password>PPP3001117</platformCore:password>
+      <platformCore:account>3946319</platformCore:account>
+      <platformCore:role internalId="3"></platformCore:role>
+    </platformMsgs:passport>
+    <platformMsgs:applicationInfo>
+      <platformCore:applicationId>7BCC32F1-FBA5-4796-A6C4-D443AEBCD47C</platformCore:applicationId>
+    </platformMsgs:applicationInfo>
+  </soap:Header>
+  <soap:Body>
+    <platformMsgs:add xmlns:platformMsgs="urn:messages_2017_2.platform.webservices.netsuite.com"
+                      xmlns="urn:messages_2017_2.platform.webservices.netsuite.com">
+      <platformMsgs:Customer xsi:type="relShip:Customer"
+                             xmlns:ns510="urn:customers_2017_2.transactions.webservices.netsuite.com"
+                             xmlns:relShip="urn:relationships_2017_2.lists.webservices.netsuite.com"
+                             xmlns:ns382="urn:sales_2017_2.transactions.webservices.netsuite.com"
+                             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <relShip:firstName>firstName</relShip:firstName>
+        <relShip:lastName>lastName</relShip:lastName>
+        <relShip:phone>123456789</relShip:phone>
+        <relShip:email>joe.doe@abc.com</relShip:email>
+      </platformMsgs:Customer>
+    </platformMsgs:add>
+  </soap:Body>
+</soap:Envelope>
