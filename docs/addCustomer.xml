@@ -1,0 +1,647 @@
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:messages_2017_2.platform.webservices.netsuite.com" xmlns:urn1="urn:core_2017_2.platform.webservices.netsuite.com">
+  <soapenv:Header>
+    <urn:preferences>
+      <!--Optional:-->
+      <urn:warningAsError>?</urn:warningAsError>
+      <!--Optional:-->
+      <urn:disableMandatoryCustomFieldValidation>?</urn:disableMandatoryCustomFieldValidation>
+      <!--Optional:-->
+      <urn:disableSystemNotesForCustomFields>?</urn:disableSystemNotesForCustomFields>
+      <!--Optional:-->
+      <urn:ignoreReadOnlyFields>?</urn:ignoreReadOnlyFields>
+      <!--Optional:-->
+      <urn:runServerSuiteScriptAndTriggerWorkflows>?</urn:runServerSuiteScriptAndTriggerWorkflows>
+    </urn:preferences>
+    <urn:partnerInfo>
+      <!--Optional:-->
+      <urn:partnerId>?</urn:partnerId>
+    </urn:partnerInfo>
+    <urn:applicationInfo>
+      <!--Optional:-->
+      <urn:applicationId>?</urn:applicationId>
+    </urn:applicationInfo>
+    <urn:tokenPassport>
+      <urn1:account>?</urn1:account>
+      <urn1:consumerKey>?</urn1:consumerKey>
+      <urn1:token>?</urn1:token>
+      <urn1:nonce>?</urn1:nonce>
+      <urn1:timestamp>?</urn1:timestamp>
+      <urn1:signature algorithm="?">?</urn1:signature>
+    </urn:tokenPassport>
+    <urn:passport>
+      <urn1:email>?</urn1:email>
+      <urn1:password>?</urn1:password>
+      <urn1:account>?</urn1:account>
+      <!--Optional:-->
+      <urn1:role internalId="?" externalId="?" xsi:type="urn1:RecordRef" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <!--Optional:-->
+        <urn1:name>?</urn1:name>
+      </urn1:role>
+    </urn:passport>
+  </soapenv:Header>
+  <soapenv:Body>
+    <urn:add>
+      <urn:record xsi:type="ns810:Customer" xmlns:ns510="urn:customers_2017_2.transactions.webservices.netsuite.com" xmlns:ns810="urn:relationships_2017_2.lists.webservices.netsuite.com" xmlns:ns382="urn:sales_2017_2.transactions.webservices.netsuite.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <!--Optional:-->
+        <urn1:nullFieldList>
+          <!--Zero or more repetitions:-->
+          <urn1:name>?</urn1:name>
+        </urn1:nullFieldList>
+        <!--Optional:-->
+        <ns810:customForm externalId="?" internalId="?" type="?">
+          <!--Optional:-->
+          <urn1:name>?</urn1:name>
+        </ns810:customForm>
+        <!--Optional:-->
+        <ns810:entityId>?</ns810:entityId>
+        <!--Optional:-->
+        <ns810:altName>?</ns810:altName>
+        <!--Optional:-->
+        <ns810:isPerson>?</ns810:isPerson>
+        <!--Optional:-->
+        <ns810:phoneticName>?</ns810:phoneticName>
+        <!--Optional:-->
+        <ns810:salutation>?</ns810:salutation>
+        <!--Optional:-->
+        <ns810:firstName>?</ns810:firstName>
+        <!--Optional:-->
+        <ns810:middleName>?</ns810:middleName>
+        <!--Optional:-->
+        <ns810:lastName>?</ns810:lastName>
+        <!--Optional:-->
+        <ns810:companyName>?</ns810:companyName>
+        <!--Optional:-->
+        <ns810:entityStatus externalId="?" internalId="?" type="?">
+          <!--Optional:-->
+          <urn1:name>?</urn1:name>
+        </ns810:entityStatus>
+        <!--Optional:-->
+        <ns810:parent externalId="?" internalId="?" type="?">
+          <!--Optional:-->
+          <urn1:name>?</urn1:name>
+        </ns810:parent>
+        <!--Optional:-->
+        <ns810:phone>?</ns810:phone>
+        <!--Optional:-->
+        <ns810:fax>?</ns810:fax>
+        <!--Optional:-->
+        <ns810:email>?</ns810:email>
+        <!--Optional:-->
+        <ns810:url>?</ns810:url>
+        <!--Optional:-->
+        <ns810:defaultAddress>?</ns810:defaultAddress>
+        <!--Optional:-->
+        <ns810:isInactive>?</ns810:isInactive>
+        <!--Optional:-->
+        <ns810:category externalId="?" internalId="?" type="?">
+          <!--Optional:-->
+          <urn1:name>?</urn1:name>
+        </ns810:category>
+        <!--Optional:-->
+        <ns810:title>?</ns810:title>
+        <!--Optional:-->
+        <ns810:printOnCheckAs>?</ns810:printOnCheckAs>
+        <!--Optional:-->
+        <ns810:altPhone>?</ns810:altPhone>
+        <!--Optional:-->
+        <ns810:homePhone>?</ns810:homePhone>
+        <!--Optional:-->
+        <ns810:mobilePhone>?</ns810:mobilePhone>
+        <!--Optional:-->
+        <ns810:altEmail>?</ns810:altEmail>
+        <!--Optional:-->
+        <ns810:language>?</ns810:language>
+        <!--Optional:-->
+        <ns810:comments>?</ns810:comments>
+        <!--Optional:-->
+        <ns810:numberFormat>?</ns810:numberFormat>
+        <!--Optional:-->
+        <ns810:negativeNumberFormat>?</ns810:negativeNumberFormat>
+        <!--Optional:-->
+        <ns810:dateCreated>?</ns810:dateCreated>
+        <!--Optional:-->
+        <ns810:image externalId="?" internalId="?" type="?">
+          <!--Optional:-->
+          <urn1:name>?</urn1:name>
+        </ns810:image>
+        <!--Optional:-->
+        <ns810:emailPreference>?</ns810:emailPreference>
+        <!--Optional:-->
+        <ns810:subsidiary externalId="?" internalId="?" type="?">
+          <!--Optional:-->
+          <urn1:name>?</urn1:name>
+        </ns810:subsidiary>
+        <!--Optional:-->
+        <ns810:representingSubsidiary externalId="?" internalId="?" type="?">
+          <!--Optional:-->
+          <urn1:name>?</urn1:name>
+        </ns810:representingSubsidiary>
+        <!--Optional:-->
+        <ns810:salesRep externalId="?" internalId="?" type="?">
+          <!--Optional:-->
+          <urn1:name>?</urn1:name>
+        </ns810:salesRep>
+        <!--Optional:-->
+        <ns810:territory externalId="?" internalId="?" type="?">
+          <!--Optional:-->
+          <urn1:name>?</urn1:name>
+        </ns810:territory>
+        <!--Optional:-->
+        <ns810:contribPct>?</ns810:contribPct>
+        <!--Optional:-->
+        <ns810:partner externalId="?" internalId="?" type="?">
+          <!--Optional:-->
+          <urn1:name>?</urn1:name>
+        </ns810:partner>
+        <!--Optional:-->
+        <ns810:salesGroup externalId="?" internalId="?" type="?">
+          <!--Optional:-->
+          <urn1:name>?</urn1:name>
+        </ns810:salesGroup>
+        <!--Optional:-->
+        <ns810:vatRegNumber>?</ns810:vatRegNumber>
+        <!--Optional:-->
+        <ns810:accountNumber>?</ns810:accountNumber>
+        <!--Optional:-->
+        <ns810:taxExempt>?</ns810:taxExempt>
+        <!--Optional:-->
+        <ns810:terms externalId="?" internalId="?" type="?">
+          <!--Optional:-->
+          <urn1:name>?</urn1:name>
+        </ns810:terms>
+        <!--Optional:-->
+        <ns810:creditLimit>?</ns810:creditLimit>
+        <!--Optional:-->
+        <ns810:creditHoldOverride>?</ns810:creditHoldOverride>
+        <!--Optional:-->
+        <ns810:monthlyClosing>?</ns810:monthlyClosing>
+        <!--Optional:-->
+        <ns810:overrideCurrencyFormat>?</ns810:overrideCurrencyFormat>
+        <!--Optional:-->
+        <ns810:displaySymbol>?</ns810:displaySymbol>
+        <!--Optional:-->
+        <ns810:symbolPlacement>?</ns810:symbolPlacement>
+        <!--Optional:-->
+        <ns810:balance>?</ns810:balance>
+        <!--Optional:-->
+        <ns810:overdueBalance>?</ns810:overdueBalance>
+        <!--Optional:-->
+        <ns810:daysOverdue>?</ns810:daysOverdue>
+        <!--Optional:-->
+        <ns810:unbilledOrders>?</ns810:unbilledOrders>
+        <!--Optional:-->
+        <ns810:consolUnbilledOrders>?</ns810:consolUnbilledOrders>
+        <!--Optional:-->
+        <ns810:consolOverdueBalance>?</ns810:consolOverdueBalance>
+        <!--Optional:-->
+        <ns810:consolDepositBalance>?</ns810:consolDepositBalance>
+        <!--Optional:-->
+        <ns810:consolBalance>?</ns810:consolBalance>
+        <!--Optional:-->
+        <ns810:consolAging>?</ns810:consolAging>
+        <!--Optional:-->
+        <ns810:consolAging1>?</ns810:consolAging1>
+        <!--Optional:-->
+        <ns810:consolAging2>?</ns810:consolAging2>
+        <!--Optional:-->
+        <ns810:consolAging3>?</ns810:consolAging3>
+        <!--Optional:-->
+        <ns810:consolAging4>?</ns810:consolAging4>
+        <!--Optional:-->
+        <ns810:consolDaysOverdue>?</ns810:consolDaysOverdue>
+        <!--Optional:-->
+        <ns810:priceLevel externalId="?" internalId="?" type="?">
+          <!--Optional:-->
+          <urn1:name>?</urn1:name>
+        </ns810:priceLevel>
+        <!--Optional:-->
+        <ns810:currency externalId="?" internalId="?" type="?">
+          <!--Optional:-->
+          <urn1:name>?</urn1:name>
+        </ns810:currency>
+        <!--Optional:-->
+        <ns810:prefCCProcessor externalId="?" internalId="?" type="?">
+          <!--Optional:-->
+          <urn1:name>?</urn1:name>
+        </ns810:prefCCProcessor>
+        <!--Optional:-->
+        <ns810:depositBalance>?</ns810:depositBalance>
+        <!--Optional:-->
+        <ns810:shipComplete>?</ns810:shipComplete>
+        <!--Optional:-->
+        <ns810:taxable>?</ns810:taxable>
+        <!--Optional:-->
+        <ns810:taxItem externalId="?" internalId="?" type="?">
+          <!--Optional:-->
+          <urn1:name>?</urn1:name>
+        </ns810:taxItem>
+        <!--Optional:-->
+        <ns810:resaleNumber>?</ns810:resaleNumber>
+        <!--Optional:-->
+        <ns810:aging>?</ns810:aging>
+        <!--Optional:-->
+        <ns810:aging1>?</ns810:aging1>
+        <!--Optional:-->
+        <ns810:aging2>?</ns810:aging2>
+        <!--Optional:-->
+        <ns810:aging3>?</ns810:aging3>
+        <!--Optional:-->
+        <ns810:aging4>?</ns810:aging4>
+        <!--Optional:-->
+        <ns810:startDate>?</ns810:startDate>
+        <!--Optional:-->
+        <ns810:alcoholRecipientType>?</ns810:alcoholRecipientType>
+        <!--Optional:-->
+        <ns810:endDate>?</ns810:endDate>
+        <!--Optional:-->
+        <ns810:reminderDays>?</ns810:reminderDays>
+        <!--Optional:-->
+        <ns810:shippingItem externalId="?" internalId="?" type="?">
+          <!--Optional:-->
+          <urn1:name>?</urn1:name>
+        </ns810:shippingItem>
+        <!--Optional:-->
+        <ns810:thirdPartyAcct>?</ns810:thirdPartyAcct>
+        <!--Optional:-->
+        <ns810:thirdPartyZipcode>?</ns810:thirdPartyZipcode>
+        <!--Optional:-->
+        <ns810:thirdPartyCountry>?</ns810:thirdPartyCountry>
+        <!--Optional:-->
+        <ns810:giveAccess>?</ns810:giveAccess>
+        <!--Optional:-->
+        <ns810:estimatedBudget>?</ns810:estimatedBudget>
+        <!--Optional:-->
+        <ns810:accessRole externalId="?" internalId="?" type="?">
+          <!--Optional:-->
+          <urn1:name>?</urn1:name>
+        </ns810:accessRole>
+        <!--Optional:-->
+        <ns810:sendEmail>?</ns810:sendEmail>
+        <!--Optional:-->
+        <ns810:password>?</ns810:password>
+        <!--Optional:-->
+        <ns810:password2>?</ns810:password2>
+        <!--Optional:-->
+        <ns810:requirePwdChange>?</ns810:requirePwdChange>
+        <!--Optional:-->
+        <ns810:campaignCategory externalId="?" internalId="?" type="?">
+          <!--Optional:-->
+          <urn1:name>?</urn1:name>
+        </ns810:campaignCategory>
+        <!--Optional:-->
+        <ns810:leadSource externalId="?" internalId="?" type="?">
+          <!--Optional:-->
+          <urn1:name>?</urn1:name>
+        </ns810:leadSource>
+        <!--Optional:-->
+        <ns810:receivablesAccount externalId="?" internalId="?" type="?">
+          <!--Optional:-->
+          <urn1:name>?</urn1:name>
+        </ns810:receivablesAccount>
+        <!--Optional:-->
+        <ns810:drAccount externalId="?" internalId="?" type="?">
+          <!--Optional:-->
+          <urn1:name>?</urn1:name>
+        </ns810:drAccount>
+        <!--Optional:-->
+        <ns810:fxAccount externalId="?" internalId="?" type="?">
+          <!--Optional:-->
+          <urn1:name>?</urn1:name>
+        </ns810:fxAccount>
+        <!--Optional:-->
+        <ns810:defaultOrderPriority>?</ns810:defaultOrderPriority>
+        <!--Optional:-->
+        <ns810:webLead>?</ns810:webLead>
+        <!--Optional:-->
+        <ns810:referrer>?</ns810:referrer>
+        <!--Optional:-->
+        <ns810:keywords>?</ns810:keywords>
+        <!--Optional:-->
+        <ns810:clickStream>?</ns810:clickStream>
+        <!--Optional:-->
+        <ns810:lastPageVisited>?</ns810:lastPageVisited>
+        <!--Optional:-->
+        <ns810:visits>?</ns810:visits>
+        <!--Optional:-->
+        <ns810:firstVisit>?</ns810:firstVisit>
+        <!--Optional:-->
+        <ns810:lastVisit>?</ns810:lastVisit>
+        <!--Optional:-->
+        <ns810:billPay>?</ns810:billPay>
+        <!--Optional:-->
+        <ns810:openingBalance>?</ns810:openingBalance>
+        <!--Optional:-->
+        <ns810:lastModifiedDate>?</ns810:lastModifiedDate>
+        <!--Optional:-->
+        <ns810:openingBalanceDate>?</ns810:openingBalanceDate>
+        <!--Optional:-->
+        <ns810:openingBalanceAccount externalId="?" internalId="?" type="?">
+          <!--Optional:-->
+          <urn1:name>?</urn1:name>
+        </ns810:openingBalanceAccount>
+        <!--Optional:-->
+        <ns810:stage>?</ns810:stage>
+        <!--Optional:-->
+        <ns810:emailTransactions>?</ns810:emailTransactions>
+        <!--Optional:-->
+        <ns810:printTransactions>?</ns810:printTransactions>
+        <!--Optional:-->
+        <ns810:faxTransactions>?</ns810:faxTransactions>
+        <!--Optional:-->
+        <ns810:syncPartnerTeams>?</ns810:syncPartnerTeams>
+        <!--Optional:-->
+        <ns810:isBudgetApproved>?</ns810:isBudgetApproved>
+        <!--Optional:-->
+        <ns810:globalSubscriptionStatus>?</ns810:globalSubscriptionStatus>
+        <!--Optional:-->
+        <ns810:salesReadiness externalId="?" internalId="?" type="?">
+          <!--Optional:-->
+          <urn1:name>?</urn1:name>
+        </ns810:salesReadiness>
+        <!--Optional:-->
+        <ns810:salesTeamList replaceAll="true">
+          <!--Zero or more repetitions:-->
+          <ns810:salesTeam>
+            <!--Optional:-->
+            <ns810:employee externalId="?" internalId="?" type="?">
+              <!--Optional:-->
+              <urn1:name>?</urn1:name>
+            </ns810:employee>
+            <!--Optional:-->
+            <ns810:salesRole externalId="?" internalId="?" type="?">
+              <!--Optional:-->
+              <urn1:name>?</urn1:name>
+            </ns810:salesRole>
+            <!--Optional:-->
+            <ns810:isPrimary>?</ns810:isPrimary>
+            <!--Optional:-->
+            <ns810:contribution>?</ns810:contribution>
+          </ns810:salesTeam>
+        </ns810:salesTeamList>
+        <!--Optional:-->
+        <ns810:buyingReason externalId="?" internalId="?" type="?">
+          <!--Optional:-->
+          <urn1:name>?</urn1:name>
+        </ns810:buyingReason>
+        <!--Optional:-->
+        <ns810:downloadList replaceAll="true">
+          <!--Zero or more repetitions:-->
+          <ns810:download>
+            <!--Optional:-->
+            <ns810:file externalId="?" internalId="?" type="?">
+              <!--Optional:-->
+              <urn1:name>?</urn1:name>
+            </ns810:file>
+            <!--Optional:-->
+            <ns810:licenseCode>?</ns810:licenseCode>
+            <!--Optional:-->
+            <ns810:remainingDownloads>?</ns810:remainingDownloads>
+            <!--Optional:-->
+            <ns810:expiration>?</ns810:expiration>
+          </ns810:download>
+        </ns810:downloadList>
+        <!--Optional:-->
+        <ns810:buyingTimeFrame externalId="?" internalId="?" type="?">
+          <!--Optional:-->
+          <urn1:name>?</urn1:name>
+        </ns810:buyingTimeFrame>
+        <!--Optional:-->
+        <ns810:addressbookList replaceAll="true">
+
+
+          <!--Zero or more repetitions:-->
+          <ns810:addressbook>
+            <!--Optional:-->
+            <ns810:defaultShipping>true</ns810:defaultShipping>
+            <!--Optional:-->
+            <ns810:defaultBilling>true</ns810:defaultBilling>
+            <!--Optional:-->
+            <ns810:isResidential>false</ns810:isResidential>
+            <!--Optional:-->
+            <ns810:label>LABEL</ns810:label>
+            <!--Optional:-->
+            <ns810:addressbookAddress>
+              <!--Optional:-->
+              <urn1:nullFieldList>
+                <!--Zero or more repetitions:-->
+                <urn1:name>?</urn1:name>
+              </urn1:nullFieldList>
+              <!--Optional:-->
+              <urn2:internalId xmlns:urn2="urn:common_2017_2.platform.webservices.netsuite.com">?</urn2:internalId>
+              <!--Optional:-->
+              <urn2:country xmlns:urn2="urn:common_2017_2.platform.webservices.netsuite.com">_americanSamoa</urn2:country>
+              <!--Optional:-->
+              <urn2:attention xmlns:urn2="urn:common_2017_2.platform.webservices.netsuite.com">attension</urn2:attention>
+              <!--Optional:-->
+              <urn2:addressee xmlns:urn2="urn:common_2017_2.platform.webservices.netsuite.com">addressee</urn2:addressee>
+              <!--Optional:-->
+              <urn2:addrPhone xmlns:urn2="urn:common_2017_2.platform.webservices.netsuite.com">000111</urn2:addrPhone>
+              <!--Optional:-->
+              <urn2:addr1 xmlns:urn2="urn:common_2017_2.platform.webservices.netsuite.com">addr1</urn2:addr1>
+              <!--Optional:-->
+              <urn2:addr2 xmlns:urn2="urn:common_2017_2.platform.webservices.netsuite.com">addr2</urn2:addr2>
+              <!--Optional:-->
+              <urn2:addr3 xmlns:urn2="urn:common_2017_2.platform.webservices.netsuite.com">addr3</urn2:addr3>
+              <!--Optional:-->
+              <urn2:city xmlns:urn2="urn:common_2017_2.platform.webservices.netsuite.com">city</urn2:city>
+              <!--Optional:-->
+              <urn2:state xmlns:urn2="urn:common_2017_2.platform.webservices.netsuite.com">state</urn2:state>
+              <!--Optional:-->
+              <urn2:zip xmlns:urn2="urn:common_2017_2.platform.webservices.netsuite.com">234</urn2:zip>
+              <!--Optional:-->
+              <urn2:addrText xmlns:urn2="urn:common_2017_2.platform.webservices.netsuite.com">addrText</urn2:addrText>
+              <!--Optional:-->
+              <urn2:override xmlns:urn2="urn:common_2017_2.platform.webservices.netsuite.com">true</urn2:override>
+              <!--Optional:-->
+              <urn2:customFieldList xmlns:urn2="urn:common_2017_2.platform.webservices.netsuite.com">
+                <!--Zero or more repetitions:-->
+                <urn1:customField internalId="?" scriptId="?"/>
+              </urn2:customFieldList>
+            </ns810:addressbookAddress>
+            <!--Optional:-->
+            <ns810:internalId>?</ns810:internalId>
+          </ns810:addressbook>
+          <ns810:addressbook>
+            <ns810:defaultShipping>false</ns810:defaultShipping>
+            <ns810:defaultBilling>false</ns810:defaultBilling>
+            <ns810:isResidential>false</ns810:isResidential><ns810:label>SECOND LABEL</ns810:label></ns810:addressbook>
+
+
+        </ns810:addressbookList>
+        <!--Optional:-->
+        <ns810:subscriptionsList replaceAll="true">
+          <!--Zero or more repetitions:-->
+          <ns810:subscriptions>
+            <!--Optional:-->
+            <ns810:subscribed>?</ns810:subscribed>
+            <!--Optional:-->
+            <ns810:subscription externalId="?" internalId="?" type="?">
+              <!--Optional:-->
+              <urn1:name>?</urn1:name>
+            </ns810:subscription>
+            <!--Optional:-->
+            <ns810:lastModifiedDate>?</ns810:lastModifiedDate>
+          </ns810:subscriptions>
+        </ns810:subscriptionsList>
+        <!--Optional:-->
+        <ns810:contactRolesList replaceAll="true">
+          <!--Zero or more repetitions:-->
+          <ns810:contactRoles>
+            <!--Optional:-->
+            <ns810:giveAccess>?</ns810:giveAccess>
+            <!--Optional:-->
+            <ns810:contact externalId="?" internalId="?" type="?">
+              <!--Optional:-->
+              <urn1:name>?</urn1:name>
+            </ns810:contact>
+            <!--Optional:-->
+            <ns810:email>?</ns810:email>
+            <!--Optional:-->
+            <ns810:role externalId="?" internalId="?" type="?">
+              <!--Optional:-->
+              <urn1:name>?</urn1:name>
+            </ns810:role>
+            <!--Optional:-->
+            <ns810:password>?</ns810:password>
+            <!--Optional:-->
+            <ns810:password2>?</ns810:password2>
+            <!--Optional:-->
+            <ns810:sendEmail>?</ns810:sendEmail>
+          </ns810:contactRoles>
+        </ns810:contactRolesList>
+        <!--Optional:-->
+        <ns810:currencyList replaceAll="true">
+          <!--Zero or more repetitions:-->
+          <ns810:currency>
+            <!--Optional:-->
+            <ns810:currency externalId="?" internalId="?" type="?">
+              <!--Optional:-->
+              <urn1:name>?</urn1:name>
+            </ns810:currency>
+            <!--Optional:-->
+            <ns810:balance>?</ns810:balance>
+            <!--Optional:-->
+            <ns810:consolBalance>?</ns810:consolBalance>
+            <!--Optional:-->
+            <ns810:depositBalance>?</ns810:depositBalance>
+            <!--Optional:-->
+            <ns810:consolDepositBalance>?</ns810:consolDepositBalance>
+            <!--Optional:-->
+            <ns810:overdueBalance>?</ns810:overdueBalance>
+            <!--Optional:-->
+            <ns810:consolOverdueBalance>?</ns810:consolOverdueBalance>
+            <!--Optional:-->
+            <ns810:unbilledOrders>?</ns810:unbilledOrders>
+            <!--Optional:-->
+            <ns810:consolUnbilledOrders>?</ns810:consolUnbilledOrders>
+            <!--Optional:-->
+            <ns810:overrideCurrencyFormat>?</ns810:overrideCurrencyFormat>
+            <!--Optional:-->
+            <ns810:displaySymbol>?</ns810:displaySymbol>
+            <!--Optional:-->
+            <ns810:symbolPlacement>?</ns810:symbolPlacement>
+          </ns810:currency>
+        </ns810:currencyList>
+        <!--Optional:-->
+        <ns810:creditCardsList replaceAll="true">
+          <!--Zero or more repetitions:-->
+          <ns810:creditCards>
+            <!--Optional:-->
+            <ns810:internalId>?</ns810:internalId>
+            <!--Optional:-->
+            <ns810:ccNumber>?</ns810:ccNumber>
+            <!--Optional:-->
+            <ns810:ccExpireDate>?</ns810:ccExpireDate>
+            <!--Optional:-->
+            <ns810:ccName>?</ns810:ccName>
+            <!--Optional:-->
+            <ns810:paymentMethod externalId="?" internalId="?" type="?">
+              <!--Optional:-->
+              <urn1:name>?</urn1:name>
+            </ns810:paymentMethod>
+            <!--Optional:-->
+            <ns810:cardState externalId="?" internalId="?" type="?">
+              <!--Optional:-->
+              <urn1:name>?</urn1:name>
+            </ns810:cardState>
+            <!--Optional:-->
+            <ns810:stateFrom>?</ns810:stateFrom>
+            <!--Optional:-->
+            <ns810:debitcardIssueNo>?</ns810:debitcardIssueNo>
+            <!--Optional:-->
+            <ns810:ccMemo>?</ns810:ccMemo>
+            <!--Optional:-->
+            <ns810:validfrom>?</ns810:validfrom>
+            <!--Optional:-->
+            <ns810:ccDefault>?</ns810:ccDefault>
+          </ns810:creditCards>
+        </ns810:creditCardsList>
+        <!--Optional:-->
+        <ns810:partnersList replaceAll="true">
+          <!--Zero or more repetitions:-->
+          <ns810:partners>
+            <!--Optional:-->
+            <urn2:partner externalId="?" internalId="?" type="?" xmlns:urn2="urn:common_2017_2.platform.webservices.netsuite.com">
+              <!--Optional:-->
+              <urn1:name>?</urn1:name>
+            </urn2:partner>
+            <!--Optional:-->
+            <urn2:partnerRole externalId="?" internalId="?" type="?" xmlns:urn2="urn:common_2017_2.platform.webservices.netsuite.com">
+              <!--Optional:-->
+              <urn1:name>?</urn1:name>
+            </urn2:partnerRole>
+            <!--Optional:-->
+            <urn2:isPrimary xmlns:urn2="urn:common_2017_2.platform.webservices.netsuite.com">?</urn2:isPrimary>
+            <!--Optional:-->
+            <urn2:contribution xmlns:urn2="urn:common_2017_2.platform.webservices.netsuite.com">?</urn2:contribution>
+          </ns810:partners>
+        </ns810:partnersList>
+        <!--Optional:-->
+        <ns810:groupPricingList replaceAll="true">
+          <!--Zero or more repetitions:-->
+          <ns810:groupPricing>
+            <!--Optional:-->
+            <ns810:group externalId="?" internalId="?" type="?">
+              <!--Optional:-->
+              <urn1:name>?</urn1:name>
+            </ns810:group>
+            <!--Optional:-->
+            <ns810:level externalId="?" internalId="?" type="?">
+              <!--Optional:-->
+              <urn1:name>?</urn1:name>
+            </ns810:level>
+          </ns810:groupPricing>
+        </ns810:groupPricingList>
+        <!--Optional:-->
+        <ns810:itemPricingList replaceAll="true">
+          <!--Zero or more repetitions:-->
+          <ns810:itemPricing>
+            <!--Optional:-->
+            <ns810:item externalId="?" internalId="?" type="?">
+              <!--Optional:-->
+              <urn1:name>?</urn1:name>
+            </ns810:item>
+            <!--Optional:-->
+            <ns810:level externalId="?" internalId="?" type="?">
+              <!--Optional:-->
+              <urn1:name>?</urn1:name>
+            </ns810:level>
+            <!--Optional:-->
+            <ns810:currency externalId="?" internalId="?" type="?">
+              <!--Optional:-->
+              <urn1:name>?</urn1:name>
+            </ns810:currency>
+            <!--Optional:-->
+            <ns810:price>?</ns810:price>
+          </ns810:itemPricing>
+        </ns810:itemPricingList>
+        <!--Optional:-->
+        <ns810:customFieldList>
+          <!--Zero or more repetitions:-->
+          <urn1:customField internalId="?" scriptId="?"/>
+        </ns810:customFieldList>
+      </urn:record>
+    </urn:add>
+  </soapenv:Body>
+</soapenv:Envelope>
