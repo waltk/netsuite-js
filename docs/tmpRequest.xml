@@ -34,76 +34,74 @@
   <soap:Body>
     <platformMsgs:add xmlns:platformMsgs="urn:messages_2017_2.platform.webservices.netsuite.com"
                       xmlns="urn:messages_2017_2.platform.webservices.netsuite.com">
-      <platformMsgs:Customer xsi:type="relShipCustomer:Customer"
-                             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                             xmlns:relShipCustomer="urn:relationships_2017_2.lists.webservices.netsuite.com">
-        <relShipCustomer:addressbookList
-          xsi:type="relShipCustomerAddressbookList:CustomerAddressbookList"
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xmlns:relShipCustomerAddressbookList="urn:relationships_2017_2.lists.webservices.netsuite.com"
-          replaceAll="true">
-          <relShipCustomerAddressbookList:addressbook
-            xsi:type="relShipCustomerAddressbook:CustomerAddressbook"
-            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-            xmlns:relShipCustomerAddressbook="urn:relationships_2017_2.lists.webservices.netsuite.com">
-            <relShipCustomerAddressbook:addressbookAddress xsi:type="platformCommonAddress:Address"
-                                                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                                                           xmlns:platformCommonAddress="urn:common_2017_2.platform.webservices.netsuite.com">
-              <platformCommonAddress:addr1>addr1</platformCommonAddress:addr1>
-              <platformCommonAddress:addr2>addr2</platformCommonAddress:addr2>
-              <platformCommonAddress:addr3>addr3</platformCommonAddress:addr3>
-              <platformCommonAddress:addressee>addressee</platformCommonAddress:addressee>
-              <platformCommonAddress:addrPhone>addrPhone</platformCommonAddress:addrPhone>
-              <platformCommonAddress:addrText>addrText</platformCommonAddress:addrText>
-              <platformCommonAddress:attention>attention</platformCommonAddress:attention>
-              <platformCommonAddress:city>city</platformCommonAddress:city>
-              <platformCommonAddress:country>_unitedStates</platformCommonAddress:country>
-              <platformCommonAddress:override>false</platformCommonAddress:override>
-              <platformCommonAddress:state>state</platformCommonAddress:state>
-              <platformCommonAddress:zip>000000</platformCommonAddress:zip>
-            </relShipCustomerAddressbook:addressbookAddress>
-            <relShipCustomerAddressbook:defaultBilling>true
-            </relShipCustomerAddressbook:defaultBilling>
-            <relShipCustomerAddressbook:defaultShipping>true
-            </relShipCustomerAddressbook:defaultShipping>
-            <relShipCustomerAddressbook:isResidential>false
-            </relShipCustomerAddressbook:isResidential>
-            <relShipCustomerAddressbook:label>label</relShipCustomerAddressbook:label>
-          </relShipCustomerAddressbookList:addressbook>
-          <relShipCustomerAddressbookList:addressbook
-            xsi:type="relShipCustomerAddressbook:CustomerAddressbook"
-            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-            xmlns:relShipCustomerAddressbook="urn:relationships_2017_2.lists.webservices.netsuite.com">
-            <relShipCustomerAddressbook:addressbookAddress xsi:type="platformCommonAddress:Address"
-                                                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                                                           xmlns:platformCommonAddress="urn:common_2017_2.platform.webservices.netsuite.com">
-              <platformCommonAddress:addr1>addr1</platformCommonAddress:addr1>
-              <platformCommonAddress:addr2>addr2</platformCommonAddress:addr2>
-              <platformCommonAddress:addr3>addr3</platformCommonAddress:addr3>
-              <platformCommonAddress:addressee>addressee</platformCommonAddress:addressee>
-              <platformCommonAddress:addrPhone>addrPhone</platformCommonAddress:addrPhone>
-              <platformCommonAddress:addrText>addrText</platformCommonAddress:addrText>
-              <platformCommonAddress:attention>attention</platformCommonAddress:attention>
-              <platformCommonAddress:city>city</platformCommonAddress:city>
-              <platformCommonAddress:country>_unitedStates</platformCommonAddress:country>
-              <platformCommonAddress:override>false</platformCommonAddress:override>
-              <platformCommonAddress:state>state</platformCommonAddress:state>
-              <platformCommonAddress:zip>000000</platformCommonAddress:zip>
-            </relShipCustomerAddressbook:addressbookAddress>
-            <relShipCustomerAddressbook:defaultBilling>true
-            </relShipCustomerAddressbook:defaultBilling>
-            <relShipCustomerAddressbook:defaultShipping>true
-            </relShipCustomerAddressbook:defaultShipping>
-            <relShipCustomerAddressbook:isResidential>false
-            </relShipCustomerAddressbook:isResidential>
-            <relShipCustomerAddressbook:label>label</relShipCustomerAddressbook:label>
-          </relShipCustomerAddressbookList:addressbook>
-        </relShipCustomer:addressbookList>
-        <relShipCustomer:firstName>firstName</relShipCustomer:firstName>
-        <relShipCustomer:lastName>lastName</relShipCustomer:lastName>
-        <relShipCustomer:phone>123456789</relShipCustomer:phone>
-        <relShipCustomer:email>joe.doe@abc.com</relShipCustomer:email>
-      </platformMsgs:Customer>
+      <platformMsgs:SalesOrder xsi:type="tranSalesSalesOrder:SalesOrder"
+                               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                               xmlns:tranSalesSalesOrder="urn:sales_2017_2.transactions.webservices.netsuite.com">
+        <tranSalesSalesOrder:entity xsi:type="platformCore:RecordRef"
+                                    internalId="2645793"></tranSalesSalesOrder:entity>
+        <tranSalesSalesOrder:orderStatus>_pendingFulfillment</tranSalesSalesOrder:orderStatus>
+        <tranSalesSalesOrder:toBeEmailed>true</tranSalesSalesOrder:toBeEmailed>
+        <tranSalesSalesOrder:email>test@zzp.com</tranSalesSalesOrder:email>
+        <tranSalesSalesOrder:billingAddress xsi:type="platformCommonAddress:Address"
+                                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                            xmlns:platformCommonAddress="urn:common_2017_2.platform.webservices.netsuite.com">
+          <platformCommonAddress:addr1>addr1</platformCommonAddress:addr1>
+          <platformCommonAddress:addr2>addr2</platformCommonAddress:addr2>
+          <platformCommonAddress:addressee>addressee</platformCommonAddress:addressee>
+          <platformCommonAddress:addrPhone>addrPhone</platformCommonAddress:addrPhone>
+          <platformCommonAddress:attention>attention</platformCommonAddress:attention>
+          <platformCommonAddress:city>city</platformCommonAddress:city>
+          <platformCommonAddress:country>_unitedStates</platformCommonAddress:country>
+          <platformCommonAddress:override>false</platformCommonAddress:override>
+          <platformCommonAddress:state>state</platformCommonAddress:state>
+          <platformCommonAddress:zip>000000</platformCommonAddress:zip>
+        </tranSalesSalesOrder:billingAddress>
+        <tranSalesSalesOrder:shippingAddress xsi:type="platformCommonAddress:Address"
+                                             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                             xmlns:platformCommonAddress="urn:common_2017_2.platform.webservices.netsuite.com">
+          <platformCommonAddress:addr1>addr1</platformCommonAddress:addr1>
+          <platformCommonAddress:addr2>addr2</platformCommonAddress:addr2>
+          <platformCommonAddress:addressee>addressee</platformCommonAddress:addressee>
+          <platformCommonAddress:addrPhone>addrPhone</platformCommonAddress:addrPhone>
+          <platformCommonAddress:attention>attention</platformCommonAddress:attention>
+          <platformCommonAddress:city>city</platformCommonAddress:city>
+          <platformCommonAddress:country>_unitedStates</platformCommonAddress:country>
+          <platformCommonAddress:override>false</platformCommonAddress:override>
+          <platformCommonAddress:state>state</platformCommonAddress:state>
+          <platformCommonAddress:zip>000000</platformCommonAddress:zip>
+        </tranSalesSalesOrder:shippingAddress>
+        <tranSalesSalesOrder:shipMethod xsi:type="platformCore:RecordRef"
+                                        internalId="6921"></tranSalesSalesOrder:shipMethod>
+        <tranSalesSalesOrder:shippingCost>150</tranSalesSalesOrder:shippingCost>
+        <tranSalesSalesOrder:getAuth>true</tranSalesSalesOrder:getAuth>
+        <tranSalesSalesOrder:itemList xsi:type="tranSalesSalesOrderItemList:SalesOrderItemList"
+                                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                      xmlns:tranSalesSalesOrderItemList="urn:sales_2017_2.transactions.webservices.netsuite.com"
+                                      replaceAll="true">
+          <tranSalesSalesOrderItemList:item xsi:type="tranSalesSalesOrderItem:SalesOrderItem"
+                                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                            xmlns:tranSalesSalesOrderItem="urn:sales_2017_2.transactions.webservices.netsuite.com">
+            <tranSalesSalesOrderItem:item xsi:type="platformCore:RecordRef"
+                                          internalId="6167"></tranSalesSalesOrderItem:item>
+            <tranSalesSalesOrderItem:quantity>1</tranSalesSalesOrderItem:quantity>
+          </tranSalesSalesOrderItemList:item>
+          <tranSalesSalesOrderItemList:item xsi:type="tranSalesSalesOrderItem:SalesOrderItem"
+                                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                            xmlns:tranSalesSalesOrderItem="urn:sales_2017_2.transactions.webservices.netsuite.com">
+            <tranSalesSalesOrderItem:item xsi:type="platformCore:RecordRef"
+                                          internalId="4459"></tranSalesSalesOrderItem:item>
+            <tranSalesSalesOrderItem:quantity>1</tranSalesSalesOrderItem:quantity>
+          </tranSalesSalesOrderItemList:item>
+          <tranSalesSalesOrderItemList:item xsi:type="tranSalesSalesOrderItem:SalesOrderItem"
+                                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                            xmlns:tranSalesSalesOrderItem="urn:sales_2017_2.transactions.webservices.netsuite.com">
+            <tranSalesSalesOrderItem:item xsi:type="platformCore:RecordRef"
+                                          internalId="4183"></tranSalesSalesOrderItem:item>
+            <tranSalesSalesOrderItem:quantity>1</tranSalesSalesOrderItem:quantity>
+          </tranSalesSalesOrderItemList:item>
+        </tranSalesSalesOrder:itemList>
+      </platformMsgs:SalesOrder>
     </platformMsgs:add>
   </soap:Body>
 </soap:Envelope>
+// Invalid item reference key 4183.
