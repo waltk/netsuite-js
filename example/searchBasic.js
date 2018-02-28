@@ -34,7 +34,7 @@ service
     searchField.searchValue = 'e';
 
     search.searchFields.push(searchField);
-
+    //
     // More search fields as desired
     // var searchField2 = new NetSuite.Search.Fields.SearchStringField();
     // searchField2.field = 'lastName';
