@@ -7,18 +7,18 @@ var service = new NetSuite.Service(config);
 
 var items = [
   {
-    key: '107961-4',
+    key: 'ZZ-MPHUB',
     quantity: 1
   }, /*{
     key: 'ATS-TAT',
     quantity: 2
-  },*/{
-    key: 'ZZ-K04-OWL',
-    quantity: 1
-  },{
-    key: 'ZZ-1225CBK',
-    quantity: 1
-  }
+  },*///{
+  //   key: 'ZZ-K04-OWL',
+  //   quantity: 1
+  // },{
+  //   key: 'ZZ-1225CBK',
+  //   quantity: 1
+  // }
 ];
 
 service
