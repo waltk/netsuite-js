@@ -26,12 +26,12 @@ service
     preferences.pageSize = 10;
     service.setSearchPreferences(preferences);
 
-    var search = new NetSuite.Search.EmployeeSearchBasic();
-
+    var search = new NetSuite.Search.CustomerSearchBasic();
+    search.searchFields = [];
     var searchField = new NetSuite.Search.Fields.SearchStringField();
-    searchField.field = 'firstName';
+    searchField.field = 'email';
     searchField.operator = 'contains';
-    searchField.searchValue = 'e';
+    searchField.searchValue = '.';
 
     search.searchFields.push(searchField);
     //
