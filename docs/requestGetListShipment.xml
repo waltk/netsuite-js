@@ -1,0 +1,21 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:messages_2017_2.platform.webservices.netsuite.com" xmlns:urn1="urn:core_2017_2.platform.webservices.netsuite.com">
+  <soapenv:Header>
+    <urn:applicationInfo>
+      <urn:applicationId>?</urn:applicationId>
+    </urn:applicationInfo>
+    <urn:passport>
+      <urn1:email>?</urn1:email>
+      <urn1:password>?</urn1:password>
+      <urn1:account>?</urn1:account>
+    </urn:passport>
+  </soapenv:Header>
+  <soapenv:Body>
+    <urn:getSelectValue>
+      <urn:fieldDescription>
+        <urn1:recordType>salesOrder</urn1:recordType>
+        <urn1:field>shipMethod</urn1:field>
+      </urn:fieldDescription>
+      <urn:pageIndex>0</urn:pageIndex>
+    </urn:getSelectValue>
+  </soapenv:Body>
+</soapenv:Envelope>

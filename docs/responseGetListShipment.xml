@@ -1,0 +1,81 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <soapenv:Header>
+    <platformMsgs:documentInfo
+      xmlns:platformMsgs="urn:messages_2017_2.platform.webservices.netsuite.com">
+      <platformMsgs:nsId>WEBSERVICES_3946319_030120184755509171357372010_d24d23b38ff1
+      </platformMsgs:nsId>
+    </platformMsgs:documentInfo>
+  </soapenv:Header>
+  <soapenv:Body>
+    <getSelectValueResponse xmlns="urn:messages_2017_2.platform.webservices.netsuite.com">
+      <platformCore:getSelectValueResult
+        xmlns:platformCore="urn:core_2017_2.platform.webservices.netsuite.com">
+        <platformCore:status isSuccess="true">
+          <platformCore:statusDetail type="WARN">
+            <platformCore:code>WARNING</platformCore:code>
+            <platformCore:message>Results are incomplete. You must provide a value for field
+              entity.
+            </platformCore:message>
+          </platformCore:statusDetail>
+        </platformCore:status>
+        <platformCore:totalRecords>17</platformCore:totalRecords>
+        <platformCore:totalPages>1</platformCore:totalPages>
+        <platformCore:baseRefList>
+          <platformCore:baseRef internalId="9364" xsi:type="platformCore:RecordRef">
+            <platformCore:name>DHL Express International</platformCore:name>
+          </platformCore:baseRef>
+          <platformCore:baseRef internalId="9879" xsi:type="platformCore:RecordRef">
+            <platformCore:name>First Class</platformCore:name>
+          </platformCore:baseRef>
+          <platformCore:baseRef internalId="6921" xsi:type="platformCore:RecordRef">
+            <platformCore:name>Free Shipping</platformCore:name>
+          </platformCore:baseRef>
+          <platformCore:baseRef internalId="7484" xsi:type="platformCore:RecordRef">
+            <platformCore:name>Freight Shipping</platformCore:name>
+          </platformCore:baseRef>
+          <platformCore:baseRef internalId="6553" xsi:type="platformCore:RecordRef">
+            <platformCore:name>No Shipping - Walk In Customer</platformCore:name>
+          </platformCore:baseRef>
+          <platformCore:baseRef internalId="3324" xsi:type="platformCore:RecordRef">
+            <platformCore:name>UPS 2nd Day Air</platformCore:name>
+          </platformCore:baseRef>
+          <platformCore:baseRef internalId="3323" xsi:type="platformCore:RecordRef">
+            <platformCore:name>UPS 3 Day Select</platformCore:name>
+          </platformCore:baseRef>
+          <platformCore:baseRef internalId="3326" xsi:type="platformCore:RecordRef">
+            <platformCore:name>UPS Next Day Air Saver</platformCore:name>
+          </platformCore:baseRef>
+          <platformCore:baseRef internalId="3325" xsi:type="platformCore:RecordRef">
+            <platformCore:name>UPS Next Day Air</platformCore:name>
+          </platformCore:baseRef>
+          <platformCore:baseRef internalId="3547" xsi:type="platformCore:RecordRef">
+            <platformCore:name>UPS Worldwide Expedited</platformCore:name>
+          </platformCore:baseRef>
+          <platformCore:baseRef internalId="3546" xsi:type="platformCore:RecordRef">
+            <platformCore:name>UPS Worldwide Express</platformCore:name>
+          </platformCore:baseRef>
+          <platformCore:baseRef internalId="3322" xsi:type="platformCore:RecordRef">
+            <platformCore:name>UPS Ground</platformCore:name>
+          </platformCore:baseRef>
+          <platformCore:baseRef internalId="3545" xsi:type="platformCore:RecordRef">
+            <platformCore:name>UPS Standard</platformCore:name>
+          </platformCore:baseRef>
+          <platformCore:baseRef internalId="9876" xsi:type="platformCore:RecordRef">
+            <platformCore:name>USPS First Class</platformCore:name>
+          </platformCore:baseRef>
+          <platformCore:baseRef internalId="3550" xsi:type="platformCore:RecordRef">
+            <platformCore:name>USPS Priority Mail Express</platformCore:name>
+          </platformCore:baseRef>
+          <platformCore:baseRef internalId="3551" xsi:type="platformCore:RecordRef">
+            <platformCore:name>USPS Priority Mail International</platformCore:name>
+          </platformCore:baseRef>
+          <platformCore:baseRef internalId="3549" xsi:type="platformCore:RecordRef">
+            <platformCore:name>USPS Priority Mail</platformCore:name>
+          </platformCore:baseRef>
+        </platformCore:baseRefList>
+      </platformCore:getSelectValueResult>
+    </getSelectValueResponse>
+  </soapenv:Body>
+</soapenv:Envelope>
