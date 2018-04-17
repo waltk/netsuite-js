@@ -26,12 +26,12 @@ service
     preferences.pageSize = 10;
     service.setSearchPreferences(preferences);
 
-    var search = new NetSuite.Search.CustomerSearchBasic();
+    var search = new NetSuite.Search.PaymentMethodSearchBasic();
     search.searchFields = [];
     var searchField = new NetSuite.Search.Fields.SearchStringField();
-    searchField.field = 'email';
+    searchField.field = 'name';
     searchField.operator = 'contains';
-    searchField.searchValue = '.';
+    searchField.searchValue = '';
 
     search.searchFields.push(searchField);
     //

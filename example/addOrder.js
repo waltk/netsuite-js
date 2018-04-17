@@ -7,8 +7,8 @@ var service = new NetSuite.Service(config);
 
 var items = [
   {
-    key: 'ZZ-12BRK-REAR',
-    quantity: 1
+    key: 'ZZ-25CBTCB-RES',
+    quantity: 2
   }, /*{
     key: 'ATS-TAT',
     quantity: 2
@@ -43,16 +43,21 @@ service
     _.each(items, function (item, index) {
       if (item.value) {
         var recordRef = new NetSuite.Records.RecordRef();
-        recordRef.internalId = item.value.$attributes.internalId;
+        const attrs = item.value.$attributes;
+        recordRef.internalId = attrs.internalId;
         // @TODO - test
         // recordRef.type = 'inventoryItem';
         var salesOrderItem = new NetSuite.Sales.SalesOrderItem();
         salesOrderItem.item = recordRef;
         salesOrderItem.quantity = item.quantity;
-        salesOrderItem.rate = item.value.rate;
-        salesOrderItem.amount = +item.quantity * +item.value.rate;
-        salesOrderItem.expandItemGroup = 'false';
-        salesOrderItem.commitInventory = '_availableQty';
+        if (attrs["xsi:type"] && !new RegExp("ItemGroup", "i").test(attrs["xsi:type"])) {
+          salesOrderItem.rate = item.value.rate;
+          salesOrderItem.amount = +item.quantity * +item.value.rate;
+          salesOrderItem.expandItemGroup = 'false';
+          salesOrderItem.commitInventory = '_availableQty';
+        } else {
+          salesOrderItem.expandItemGroup = 'true';
+        }
         insertItems.push(salesOrderItem);
       }
     });

@@ -23,7 +23,7 @@ service
     var searchField = new NetSuite.Search.Fields.SearchStringField();
     searchField.field = 'itemId';
     searchField.operator = 'contains';
-    searchField.searchValue = '0114200D';
+    searchField.searchValue = 'ZZ-HV3-SII';
 
     search.searchFields.push(searchField);
 

@@ -18,7 +18,7 @@ service
     preferences.pageSize = 10;
     service.setSearchPreferences(preferences);
 
-    var search = new NetSuite.Search.EmployeeSearchBasic();
+    var search = new NetSuite.Search.TransactionSearchBasic();
 
     var searchField = new NetSuite.Search.Fields.SearchStringField();
     searchField.field = 'firstName';
