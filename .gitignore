@@ -6,3 +6,6 @@ npm-debug.log
 .idea
 /example/credentials.json
 /package-lock.json
+.vscode/launch.json
+searchResults
+testResults

@@ -7,6 +7,10 @@
  */
 
 'use strict';
+const fs = require('fs');
+
+var item = '1086';
+var type = 'inventoryItem'
 
 var denodeify = require('denodeify');
 var NetSuite = require('../');
@@ -24,10 +28,12 @@ service
     console.log(service.config.client.describe());
 
     var recordRef = new NetSuite.Records.RecordRef();
-    recordRef.internalId = 5084;
-    recordRef.type = 'employee';
+    recordRef.internalId = item;
+    recordRef.type = type;
 
-    console.log('Getting Employee record');
+    console.log('Getting item record');
+   // var result = service.get(recordRef);
+   // console.log(result);
     return service.get(recordRef);
   })
   .then(function(result, raw, soapHeader) {
@@ -35,6 +41,9 @@ service
       console.error('Error');
       console.error(result.readResponse.status.statusDetail);
     }
+    var ws = fs.createWriteStream(String(type + '-' + item));
+    ws.write(JSON.stringify(result, null, 2));
+    ws.end();
     console.log(JSON.stringify(result, null, 2));
     console.log('Last Request:');
     console.log(service.config.client.lastRequest);
@@ -44,3 +53,4 @@ service
     console.error('Last Request:');
     console.error(service.config.client.lastRequest);
   });
+  
