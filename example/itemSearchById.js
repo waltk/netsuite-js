@@ -18,8 +18,8 @@ service
     preferences.pageSize = 300;
     service.setSearchPreferences(preferences);
 
-    var search = new NetSuite.Search.TransactionSearchAdvanced();
-    search.savedSearchId = '226';
+    var search = new NetSuite.Search.ItemSearchBasic();
+    search.savedSearchId = '332';
     // var search = new NetSuite.Search.ItemSearchAdvanced();
     // search.savedSearchId = '2456';
     /*

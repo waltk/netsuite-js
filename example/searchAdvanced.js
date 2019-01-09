@@ -23,21 +23,21 @@ service
     console.log('WSDL processed');
 
     var preferences = new NetSuite.Search.SearchPreferences();
-    preferences.pageSize = 45;
+    preferences.pageSize = 300;
     service.setSearchPreferences(preferences);
 
-    var search = new NetSuite.Search.CustomerSearchAdvanced();
-    search.columns = new NetSuite.Search.CustomerSearchRow();
-    search.columns.basic = new NetSuite.Search.CustomerSearchRowBasic();
+    var search = new NetSuite.Search.ItemSearchAdvanced();
+    search.columns = new NetSuite.Search.ItemSearchRow();
+    search.columns.basic = new NetSuite.Search.ItemSearchRowBasic();
 
-    var entityIdField = new NetSuite.Search.Fields.SearchColumnStringField();
-    entityIdField.field = 'entityId';
-    search.columns.basic.searchColumnFields.push(entityIdField);
+    var itemIdField = new NetSuite.Search.Fields.SearchColumnStringField();
+    itemIdField.field = 'itemId';
+    search.columns.basic.searchColumnFields.push(itemIdField);
 
     var internalIdField = new NetSuite.Search.Fields.SearchColumnSelectField();
     internalIdField.field = 'internalId';
     search.columns.basic.searchColumnFields.push(internalIdField);
-
+    /*
     var balanceField = new NetSuite.Search.Fields.SearchColumnDoubleField();
     balanceField.field = 'balance';
     search.columns.basic.searchColumnFields.push(balanceField);
@@ -45,8 +45,8 @@ service
     var daysOverdueField = new NetSuite.Search.Fields.SearchColumnLongField();
     daysOverdueField.field = 'daysOverdue';
     search.columns.basic.searchColumnFields.push(daysOverdueField);
-
-    console.log('Performing CustomerSearchAdvanced to retrieve "balance" field');
+    */
+    console.log('Performing SearchAdvanced');
     return service.search(search);
   })
   .then(function(result, raw, soapHeader) {

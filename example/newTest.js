@@ -40,22 +40,23 @@ service
     var preferences = new NetSuite.Search.SearchPreferences();
     preferences.pageSize = 300;
     service.setSearchPreferences(preferences);
+    var search = new NetSuite.Search.ItemSearchAdvanced();
 
-    var search = new NetSuite.Search.ItemSearchRowBasic();
+    search.columns.push
 
 
     var itemIdField = new NetSuite.Search.Fields.SearchStringField();
     itemIdField.field = 'itemId';
     itemIdField.operator = 'doesNotContain';
     itemIdField.searchValue = '(';
-    search.searchFields.push(itemIdField);
+    search.criteria.push(itemIdField);
 
     var typeField = new NetSuite.Search.Fields.SearchEnumMultiSelectField();
     typeField.type = 'SearchEnumMultiSelectField';
     typeField.field = 'type';
     typeField.operator = 'anyOf';
     typeField.searchValue = '_assembly'; //, '_inventoryItem'; ['_assembly', '_inventoryItem']; ['AssemblyItem', 'InventoryItem'];
-    search.searchFields.push(typeField);
+    search.criteria.push(typeField);
 
 
     console.log('Searching for Items');
