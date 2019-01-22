@@ -74,7 +74,7 @@ service
     ws.write(totalPages + ' pages of search results \n');
     ws.write('Total records found: ' + totalRecords + '\n\n---------\n');
     ws.write('resultString\n\n' + resultString + '\n\n---------\n');
-    var records = result.searchResult.recordList.record
+    var records = result.searchResult.recordList.record;
     console.log(records)
 
     for (i in records) {

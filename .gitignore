@@ -9,3 +9,15 @@ npm-debug.log
 .vscode/launch.json
 searchResults
 testResults
+boms.json
+.vs/netsuite-js/v15/.suo
+libman.json
+netsuite-js.njsproj
+netsuite-js.sln
+netsuite_2015_01.wsdl
+purchaseOrders.json
+savedSearches/credentials.json
+savedSearches/searches.bat
+scratch.js
+test.json
+tranOut.json
