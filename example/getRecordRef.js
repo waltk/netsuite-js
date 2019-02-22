@@ -24,29 +24,26 @@ service
     console.log('WSDL processed');
 
     var recordRef = new NetSuite.Records.RecordRef();
-    recordRef.internalId = 14759344;
-    recordRef.type = 'salesOrder';
+    recordRef.internalId = 1186;
+    recordRef.type = 'lotNumberedAssemblyItem';
     /*
-    var recordRef2 = new NetSuite.Records.RecordRef();
-    recordRef2.internalId = 224;
-    recordRef2.type = 'customer';
+    //This values worked
+
+    recordRef.typeSpecified = false; //does this work?
+    recordRef.internalId = 1086;
+    recordRef.type = 'inventoryItem';
     */
     console.log('Getting list of 1 Employee record, 1 Customer record');
-    return service.getList(recordRef);
+    return service.get(recordRef);
     //return service.getList([recordRef, recordRef2]);
   })
   .then(function(result, raw, soapHeader) {
-    if (result.readResponseList.status.$attributes.isSuccess !== 'true') {
+    if (result.readResponse.status.$attributes.isSuccess !== 'true') {
       console.error('Error');
-      console.error(result.readResponseList.status.statusDetail);
+      console.error(result.readResponse.status.statusDetail);
     }
-    var records = JSON.stringify(result.readResponseList.readResponse, null, 4);
     var resultString = JSON.stringify(result, null, 4);
     wsJSON.write(resultString);
-    wsJSON.write('\n=========================\n\n');
-    wsJSON.write(records);
-    //console.log(result.readResponseList.readResponse[0]);
-    //console.log(result.readResponseList.readResponse[1]);
     console.log('Last Request:');
     console.log(service.config.client.lastRequest);
   })

@@ -73,6 +73,7 @@ service
             });
         };
       };
+      
       // pageIndex is one based, so start next promise at 2
       for (var i = 2; i <= result.searchResult.totalPages; i++) {
         current = current.then(createNextFulfilledHandler(i));
